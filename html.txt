@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naksh | Portfolio</title>
+    <style>
+        /* Modern Custom CSS */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0f172a; color: #f8fafc; line-height: 1.6; }
+        
+        /* Navbar */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 10%; background-color: #1e293b; border-bottom: 2px solid #334155; }
+        nav .logo { font-size: 24px; font-weight: bold; color: #38bdf8; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav ul li a { color: #cbd5e1; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        nav ul li a:hover { color: #38bdf8; }
+
+        /* Hero Section */
+        .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; height: 70vh; padding: 0 20px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero h1 span { color: #38bdf8; }
+        .hero p { font-size: 1.2rem; color: #94a3b8; max-width: 600px; margin-bottom: 25px; }
+        .btn { background-color: #38bdf8; color: #0f172a; padding: 10px 25px; text-decoration: none; font-weight: bold; border-radius: 5px; transition: transform 0.3s; }
+        .btn:hover { transform: scale(1.05); }
+
+        /* Projects Section */
+        .projects-section { padding: 60px 10%; background-color: #1e293b; text-align: center; }
+        .projects-section h2 { font-size: 2rem; margin-bottom: 40px; color: #38bdf8; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background-color: #0f172a; border: 1px solid #334155; padding: 25px; border-radius: 10px; transition: translateY 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: #38bdf8; }
+        .card h3 { margin-bottom: 10px; color: #f8fafc; }
+        .card p { color: #94a3b8; font-size: 0.95rem; }
+
+        /* Footer */
+        footer { text-align: center; padding: 30px; background-color: #0f172a; color: #64748b; font-size: 0.9rem; border-top: 1px solid #334155; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Naksh.</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Hi, I am <span>Naksh</span></h1>
+        <p>Welcome to my custom-designed portfolio. I am a developer passionate about building clean, fast, and beautiful web experiences.</p>
+        <a href="#contact" class="btn">Let's Connect</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <h2>My Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Project One</h3>
+                <p>A beautiful web application built using custom CSS and HTML layout systems.</p>
+            </div>
+            <div class="card">
+                <h3>Project Two</h3>
+                <p>Responsive personal portfolio website template hosted for free on GitHub.</p>
+            </div>
+            <div class="card">
+                <h3>Project Three</h3>
+                <p>E-commerce UI layout concept focusing on smooth user experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact">
+        <p>Email: contact@naksh.com | Powered by GitHub Pages</p>
+        <p style="margin-top: 10px;">&copy; 2026 Naksh. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
